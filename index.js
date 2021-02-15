@@ -18,6 +18,7 @@ console.log(fifaData.filter(g => { return g['Year'] === 2014 && g['Stage'] == 'F
 console.log(fifaData.filter(g => { return g['Year'] === 2014 && g['Stage'] == 'Final'})[0]['Away Team Goals']);
 
 //(e) Winner of 2014 world cup final */
+console.log(fifaData.filter(g => { return g['Year'] === 2014 && g['Stage'] == 'Final'})[0]['Win conditions'])
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
