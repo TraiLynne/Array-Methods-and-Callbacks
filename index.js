@@ -102,15 +102,11 @@ Use the higher order function getAverageGoals to do the following:
 */
 
 function getAverageGoals(cb) {
-    let homeGoals = cb.reduce((t, v) => {
-        return t + v["Home Team Goals"]
+    let totalGoals = cb.reduce((t, v) => {
+        return t + v["Home Team Goals"] + v["Away Team Goals"]
     }, 0)
 
-    let awayGoals = cb.reduce((t, v) => {
-        return t + v["Away Team Goals"]
-    }, 0)
-
-    return ((homeGoals / cb.length) + (awayGoals / cb.length)).toFixed(2)
+    return ((totalGoals / cb.length).toFixed(2))
 }
 
 
