@@ -79,11 +79,17 @@ Use the higher-order function getWinnersByYear to do the following:
 hint: the strings returned need to exactly match the string in step 4.
  */
 
-function getWinnersByYear(/* code here */) {
-    /* code here */
+function getWinnersByYear(data, cb1, cb2) {
+    let filteredFinals = cb1(data);
+    let winners = cb2(data, cb1);
+    let winnerStrings = []
+
+    for(let i = 0 ; i < filteredFinals.length ; i++){
+        winnerStrings.push(`In ${filteredFinals[i]}, ${winners[i]} won the world cup!`);
+    }
+
+    return winnerStrings;
 }
-
-
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use the higher order function getAverageGoals to do the following: 
