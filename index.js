@@ -9,6 +9,7 @@ Practice accessing data by console.log-ing the following pieces of data note, yo
 console.log(fifaData.filter(g => { return g['Year'] === 2014 && g['Stage'] == 'Final'})[0]['Home Team Name']);
 
 //(b) Away Team name for 2014 world cup final
+console.log(fifaData.filter(g => { return g['Year'] === 2014 && g['Stage'] == 'Final'})[0]['Away Team Name']);
 
 //(c) Home Team goals for 2014 world cup final
 
